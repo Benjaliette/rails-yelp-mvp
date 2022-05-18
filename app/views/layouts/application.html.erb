@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="banner">
+      <div class="logo">YELP</div>
+      <%= link_to "Add a restaurant", new_restaurant_path, class:"btn-create" %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

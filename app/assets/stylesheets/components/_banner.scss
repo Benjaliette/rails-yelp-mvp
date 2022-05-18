@@ -1,0 +1,36 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729_960_720.jpg");
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  background-color: rgb(233, 183, 183);
+  padding: 28px 20px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.btn-create {
+  background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+  box-shadow: 2px 2px 4px black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-create:hover {
+  background-color: rgba($color: #616161, $alpha: 0.5);
+  border: 1px solid #FFFFFF;
+  box-shadow: 2px 2px 4px black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}

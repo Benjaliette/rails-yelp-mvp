@@ -1,7 +1,17 @@
 <h1>Restaurants</h1>
 
-<ul>
+
+<div class="row">
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <div class="col-3">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/08/12/18/59/snack-2635035_960_720.jpg" class="card-img-top" alt="Default Restaurant Image">
+        <div class="card-body">
+          <h5 class="card-title"><%= restaurant.name %></h5>
+          <p class="card-text"><%= restaurant.address %></p>
+          <%= link_to "Go!", restaurant_path(restaurant), class: "btn btn-success btn-restaurant" %>
+        </div>
+      </div>
+    </div>
   <% end %>
-</ul>
+</div>
